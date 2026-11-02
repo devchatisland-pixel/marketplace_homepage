@@ -1,0 +1,6 @@
+{
+  "name": "NeonArch - Luxury Media Catalog & Studio Showcase",
+  "description": "An insanely modern, cyberpunk-neon media catalog inspired by Netflix, celebrating fine-art foot photography with interactive decor, studios, independent creators, and expandable preview cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

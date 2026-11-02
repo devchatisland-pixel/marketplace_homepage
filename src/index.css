@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #060609;
+    color: #e2e8f0;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    selection-background-color: #06b6d4;
+    selection-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbars for horizontal carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Cyberpunk Neon Glow Effects */
+.glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(6, 182, 212, 0.45), 0 0 10px -2px rgba(6, 182, 212, 0.25);
+}
+
+.glow-magenta {
+  box-shadow: 0 0 25px -4px rgba(217, 70, 239, 0.45), 0 0 10px -2px rgba(217, 70, 239, 0.25);
+}
+
+.glow-amber {
+  box-shadow: 0 0 25px -4px rgba(245, 158, 11, 0.45), 0 0 10px -2px rgba(245, 158, 11, 0.25);
+}
+
+.glow-card-active {
+  box-shadow: 0 12px 35px -8px rgba(0, 240, 255, 0.35), 0 0 0 1px rgba(0, 240, 255, 0.4);
+}
+
+/* 3D Perspective Decor Grid */
+.perspective-grid {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Glassmorphism Surface */
+.glass-panel {
+  background: rgba(12, 12, 19, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(18, 18, 28, 0.85);
+  border-color: rgba(255, 255, 255, 0.18);
+}
